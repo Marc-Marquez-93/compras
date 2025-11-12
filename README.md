@@ -35,12 +35,13 @@ Puedes poner el lenguaje para resaltar sintaxis (`js`, `html`, `bash`, `python`,
 ![Texto alternativo](https://ruta-de-imagen.jpg)
 - [x] Tarea hecha
 - [ ] Tarea pendiente
-
+---
 # bloque de codigo 💕😁
 
 ```js
 console.log("Hola mundo");
 ```
+---
 ## hola
 hehehehe
 
