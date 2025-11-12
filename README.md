@@ -15,7 +15,7 @@ Puedes poner el lenguaje para resaltar sintaxis (`js`, `html`, `bash`, `python`,
 - Manzana
 - Mango
 - Fresa
-´´´
+```
 
 # Título asdsad
 #### Sub-sección
