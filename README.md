@@ -36,5 +36,11 @@ Puedes poner el lenguaje para resaltar sintaxis (`js`, `html`, `bash`, `python`,
 - [x] Tarea hecha
 - [ ] Tarea pendiente
 
-#bloque de codigo 💕😁
+# bloque de codigo 💕😁
+
+```js
+console.log("Hola mundo");
+```
+## hola
+hehehehe
 
