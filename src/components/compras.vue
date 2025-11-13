@@ -37,7 +37,11 @@ const productos = ref(productosData);
 
       <div id="carrito">
         <h1 class="titulo2">Carrito de Compras</h1>
-        <span class="text2 span">elementos del carrito: {{ contador }}</span>
+        <span class="text2 span">🛻 Resumen del carrito {{ contador }} ✅ </span>
+        <span class="text2 span">Total de productos: {{ contador }} items </span>
+        <span class="text2 span">📋Subtotal: 💲{{ contador }} pesos </span>
+        <span class="text2 span"> ℹ️impuesto (16%): 💲{{ contador }} pesos</span>
+        <span class="titulo2 span"> Total a pagar: 💲{{ contador }} pesos </span>
       </div>
     </div>
   </div>
@@ -121,6 +125,7 @@ const productos = ref(productosData);
   margin: 20px 0;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   color: #e30613;
+    font-size: 5em;
 }
 
 .text2 {
@@ -143,6 +148,7 @@ const productos = ref(productosData);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: fit-content;
   padding: 5px 10px;
-    margin: auto;
+    margin: 4px auto;
+    border: #f5f5f5 solid 1px;
 }
 </style>
