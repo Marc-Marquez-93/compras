@@ -1,6 +1,7 @@
 <script setup>
 import { useQuasar  } from 'quasar'
 import { ref, onMounted } from 'vue'
+
 const $q = useQuasar()
 const contador = ref(0)
 
@@ -102,6 +103,16 @@ function reiniciar() {
     color: 'negative'
   })
 }
+const nombre = ref('')
+function guardar() {
+  if (nombre.value.trim() === '') {
+    $q.notify({ message: 'El campo está vacío 🚫', color: 'negative' })
+    return
+  }
+
+  $q.notify({ message: `Guardado: ${nombre.value} ✅`, color: 'positive' })
+  nombre.value = ''
+}
 </script>
 
 <template>
@@ -113,4 +124,12 @@ function reiniciar() {
     <q-btn color="primary" label="Aumentar" @click="aumentar" class="q-ma-sm" />
     <q-btn color="negative" label="Reiniciar" @click="reiniciar" class="q-ma-sm" />
   </div>
+  <q-chip clickable @click="onClick" color="primary" text-color="white" icon="shopping_cart">
+      agregar al carrito
+    </q-chip>
+<q-input
+      v-model="nombre"
+      label="Escribe tu nombre"
+      @keyup.enter="guardar"   
+    />
 </template>
