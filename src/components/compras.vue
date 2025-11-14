@@ -207,7 +207,7 @@ function formatoMoneda(num) {
 
 #carrito {
   display: grid;
-  background-color: #e30613;
+  background: linear-gradient(to bottom, #ffd600, #e30613);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   grid-template-columns: 1fr;
